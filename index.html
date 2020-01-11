@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" id="aboutLink" class="nav-link">About</a></li>
           <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="project.html" class="nav-link">Our Works</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -152,7 +152,7 @@
       </div>
     </div>
   </section>
-  <section class="ftco-section ftc-no-pb">
+  <section class="ftco-section ftc-no-pb aboutSec">
     <div class="container">
       <div class="row no-gutters">
         <div class="col-md-5 p-md-5 img img-2" style="background-image: url(images/img.jpg);">
@@ -295,7 +295,8 @@
           </div>
         </div>
       </div>
-      <p style="float: right;padding: 10px 20px;"><a href="./project.html" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
+      <p style="float: right;padding: 10px 20px;"><a href="./project.html" class="btn-custom">Learn More <span
+            class="ion-ios-arrow-forward"></span></a></p>
 
     </div>
   </section>
@@ -556,17 +557,30 @@
   <script src="js/google-map.js" type="45a4af1203db70e8585ed5c2-text/javascript"></script>
   <script src="js/main.js" type="45a4af1203db70e8585ed5c2-text/javascript"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"
     type="45a4af1203db70e8585ed5c2-text/javascript"></script>
   <script type="45a4af1203db70e8585ed5c2-text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
+  gtag('config', 'GA_TRACKING_ID');
 </script>
   <script src="ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
     data-cf-settings="45a4af1203db70e8585ed5c2-|49" defer=""></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $("#aboutLink").click(function () {
+        $('html,body').animate({
+          scrollTop: $(".aboutSec").offset().top
+        },
+          'slow');
+      });
+    });
+
+  </script>
 </body>
 
 <!-- Mirrored from colorlib.com/preview/theme/klift/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Dec 2019 10:53:30 GMT -->
