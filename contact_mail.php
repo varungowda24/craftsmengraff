@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = $_POST['message'];
     sendMail($customerName, $customerEmail, $customerPhone, $message);
     echo "<script>alert('Successfully submitted');</script>";
-    header("Location:http://localhost/craftsmengraff/contact.html");
+    header("Location:https://varungowda24.github.io/craftsmengraff/contact.html");
 }
 
 function sendMail($customerName, $customerEmail, $customerPhone, $message)
